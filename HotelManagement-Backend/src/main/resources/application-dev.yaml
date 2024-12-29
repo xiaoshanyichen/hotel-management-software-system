@@ -1,0 +1,15 @@
+server:
+  host: localhost
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://${server.host}:5432/hotel_management_test?connectionTimeZone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: update
+security:
+  jwt:
+    token:
+      secret-key: uPvWz9IVzG7wziKv8iK0JxIviGn1Li5e7a+usAFovk8=
